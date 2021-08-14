@@ -1,0 +1,94 @@
+======================================
+Object is the super class of all classes in Java 
+and switch case accepts strings as it's cases in case of java 
+=================================
+
+Generics in java are similar to 
+template in c++
+
+
+==================================
+
+
+To compile a Java program, we must provide the file name with its extension (.java):
+
+$ javac HelloWorld.java
+But to run a .class file, we need to provide the class name, not the file name. So there is no need to provide the .class extension:
+
+$ java HelloWorld.class
+Error: Could not find or load main class HelloWorld.class
+Again, let's run our program using the correct class name:
+
+$ java HelloWorld 
+Hello world..!!!
+
+=============================
+
+4. Java Package Names
+In Java, we keep similar classes together in what we call a package.
+
+Let's move HelloWorld class into the com.baeldung package:
+
+package com.baeldung;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello world..!!!");
+    }
+}
+Now let's compile and run the updated HelloWorld program like before:
+
+$ java HelloWorld
+Error: Could not find or load main class HelloWorld
+But again, we get the error “Could not find or load main class HelloWorld.”
+
+Let's try to understand what we missed here.
+
+To run a Java class that is in a package, we must provide its fully qualified name. So in our case, HelloWorld‘s fully qualified name is com.baeldung.HelloWorld.
+
+Now, when we created com.baeldung package, we actually created this folder structure:
+
+com/baeldung/HelloWorld.java
+First, let's try to run our program from the com/baeldung directory:
+
+$ java com.baeldung.HelloWorld
+Error: Could not find or load main class com.baeldung.HelloWorld
+Still, we are not able to run our program.
+
+Here, when we specified the fully qualified class name com.baeldung.HelloWorld, Java tried to find the HelloWorld.class file in com/baeldung, under the directory from where we were running the program.
+
+As we were already inside com/baeldung, Java failed to find and run the HelloWorld program.
+
+Now let's move back to the parent folder and run it:
+
+$ java com.baeldung.HelloWorld
+Hello world..!!!
+And we are again able to say “Hello” to the world.
+
+===============================================
+
+5. Invalid Classpath
+Before going ahead, let's first understand what the classpath is. It's the set of classes available to our currently running JVM.
+
+We use the classpath variable to tell the JVM where to find the .class files on the file system.
+
+While running a program, we can provide the classpath using -classpath option:
+
+java -classpath /my_programs/compiled_classes HelloWorld
+Here, Java will look for the HelloWorld.class file in /my_programs/compiled_classes folder, a folder whose name we just made up. By default, the classpath variable is set to “.”, meaning the current directory.
+
+In the above section, we changed our directory to run our program. But what if we want to run it from some other folder? That's when the classpath variable helps us.
+
+To run our program from the directory com/baeldung, we can simply state that our classpath is two directories up — one for each package part:
+
+$ java -claspath ../../ com.baeldung.HelloWorld
+Hello world..!!!
+Here, “..” represents the parent directory. In our case “../../” represents the top of our package hierarchy.
+
+paramerter passing
+
+all primitive data types are passed as 
+by value (note that String is not a primitive data type)
+
+and other data types (array etc are passed ) by refernce
+we don't have to write explicitly for that
