@@ -1,0 +1,19 @@
+total 174
+-rwxrwxrwx 1 sam sam    165 Jun 18 21:41 HelloWorld.bash
+-rwxrwxrwx 1 sam sam     47 Jun 18 21:41 Num2.bash
+-rwxrwxrwx 1 sam sam    209 Jun 18 21:42 Num3.bash
+-rwxrwxrwx 1 sam sam     45 Jun 18 21:43 Num4Variable.bash
+-rwxrwxrwx 1 sam sam    295 Jun 18 21:43 Num5UserInputVariable.bash
+-rwxrwxrwx 1 sam sam    162 Jun 18 21:47 Num6OpAsVariable.bash
+-rwxrwxrwx 1 sam sam    127 Jun 18 22:00 Num7Math.bash
+-rwxrwxrwx 1 sam sam    185 Jun 18 22:07 Num8Math.bash
+-rwxrwxrwx 1 sam sam 159653 Jun 18 22:51 bash-tutorial.pdf
+-rwxrwxrwx 1 sam sam      0 Jun 18 23:05 file01
+-rwxrwxrwx 1 sam sam      0 Jun 18 23:05 file02
+-rwxrwxrwx 1 sam sam    358 Jun 18 23:18 Q1.bash
+-rwxrwxrwx 1 sam sam     84 Jun 19 10:27 Q2.bash
+-rwxrwxrwx 1 sam sam     75 Jun 19 10:30 Q3.bash
+drwxrwxrwx 1 sam sam   4096 Jul  2 23:05 Loop
+-rwxrwxrwx 1 sam sam    831 Jul  3 17:31 AboutVariable.sh
+-rwxrwxrwx 1 sam sam    890 Jul  3 17:57 storeOPInVariableOrFile.sh
+-rwxrwxrwx 1 sam sam      0 Jul  3 17:57 output.txt

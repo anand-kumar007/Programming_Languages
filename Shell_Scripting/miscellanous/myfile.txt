@@ -1,0 +1,10 @@
+$0 for the whole line.
+$1 for the first field.
+$2 for the second field.
+$n for the nth field.
+
+awk -F: '{print $1}' /etc/passwd
+
+echo "Hello Tom" | awk '{$2="Adam"; print $0}'
+
+
